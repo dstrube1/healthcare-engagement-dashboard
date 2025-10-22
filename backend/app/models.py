@@ -1,7 +1,5 @@
 # models.py
 
-# backend/app/models.py
-
 """Database models using SQLModel for the Healthcare Engagement Dashboard."""
 
 from datetime import datetime
