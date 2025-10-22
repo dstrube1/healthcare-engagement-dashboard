@@ -39,13 +39,17 @@ This repository scaffolds a minimal FastAPI backend + React frontend that satisf
 
 1. Backend (dev):
 
-> python3 -m venv .venv 
- source .venv/bin/activate 
- pip install -r requirements.txt 
+` python3 -m venv .venv `
 
-` # create DB and load CSVs programmatically (helper endpoint exists in main.py) `
+` source .venv/bin/activate `
 
-> uvicorn app.main:app --reload --host 0.0.0.0 --port 8000 
+` pip install -r requirements.txt `
+
+` uvicorn app.main:app --reload --host 0.0.0.0 --port 8000  `
+
+` # to load the data: `
+
+` curl -X POST http://localhost:8000/import `
 
 2. Frontend (dev):
 
