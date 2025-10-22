@@ -14,30 +14,55 @@ This repository scaffolds a minimal FastAPI backend + React frontend that satisf
 # Project layout
 
 healthcare-engagement-dashboard/
+
 ├── backend/
+
 │ ├── app/
+
 │ │ ├── __init__.py
+
 │ │ ├── main.py
+
 │ │ ├── models.py
+
 │ │ ├── db.py
+
 │ │ ├── schemas.py
+
 │ │ ├── crud.py
+
 │ │ ├── middleware.py
+
 │ │ └── compliance_policies.json
+
 │ ├── data/
+
 │ │ ├── physicians.csv
+
 │ │ └── messages.csv
+
 │ └── test_classify.py
+
 │ ├── requirements.txt
+
 │ ├── Dockerfile
+
 │ └── .env.example
+
 ├── frontend/
+
 │ ├── package.json
+
 │ ├── src/
+
 │ │ ├── main.jsx
+
 │ │ └── App.jsx
+
 │ └── public/
+
 │ └── index.html
+
 └── README.md
 
 
@@ -65,38 +90,30 @@ healthcare-engagement-dashboard/
 
 1. Backend (dev):
 
-` 
-# from backend/
+``` # from backend/
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 # create DB and load CSVs programmatically (helper endpoint exists in main.py)
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-`
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000```
 
 2. Frontend (dev):
 
-` 
-cd frontend
+` cd frontend
 npm install
 npm run dev
-# open http://localhost:5173
-` 
+# open http://localhost:5173` 
 
 3. Docker (backend only):
 
 # from backend/
 
-` 
-docker build -t hed-backend:latest .
-docker run --env-file .env.example -p 8000:8000 hed-backend:latest
-` 
+` docker build -t hed-backend:latest .
+docker run --env-file .env.example -p 8000:8000 hed-backend:latest` 
 
 OR
 
-` 
-docker build -t hed-backend .
-docker run -p 8000:8000 hed-backend
-` 
+` docker build -t hed-backend .
+docker run -p 8000:8000 hed-backend` 
 
 
