@@ -1,5 +1,5 @@
 # healthcare-engagement-dashboard
-Impiricus - Full Stack Engineer - Take-Home Assignment - Healthcare Engagement Dashboard
+**Impiricus - Full Stack Engineer - Take-Home Assignment - Healthcare Engagement Dashboard**
 
 This repository scaffolds a minimal FastAPI backend + React frontend that satisfies these requirements: 
 * load physician + message data
@@ -12,7 +12,7 @@ This repository scaffolds a minimal FastAPI backend + React frontend that satisf
 * README
 
 # Project layout
-![Project layout](https://github.com/dstrube1/healthcare-engagement-dashboard/hed-project-layout.png)
+![Project layout](https://github.com/dstrube1/healthcare-engagement-dashboard/blob/main/hed-project-layout.png)
 
 # Backend (FastAPI) — highlights
 
@@ -38,12 +38,12 @@ This repository scaffolds a minimal FastAPI backend + React frontend that satisf
 
 1. Backend (dev):
 
-``` # from backend/
+` # from backend/
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 # create DB and load CSVs programmatically (helper endpoint exists in main.py)
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000 ```
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000 `
 
 2. Frontend (dev):
 
@@ -56,8 +56,8 @@ npm run dev
 
 # from backend/
 
-``` docker build -t hed-backend:latest .
-docker run --env-file .env.example -p 8000:8000 hed-backend:latest ```
+` docker build -t hed-backend:latest .
+docker run --env-file .env.example -p 8000:8000 hed-backend:latest `
 
 OR
 
