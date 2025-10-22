@@ -12,6 +12,7 @@ This repository scaffolds a minimal FastAPI backend + React frontend that satisf
 * README
 
 # Project layout
+
 ![Project layout](https://github.com/dstrube1/healthcare-engagement-dashboard/blob/main/hed-project-layout.png)
 
 # Backend (FastAPI) — highlights
@@ -61,7 +62,7 @@ docker run --env-file .env.example -p 8000:8000 hed-backend:latest `
 
 OR
 
-``` docker build -t hed-backend .
-docker run -p 8000:8000 hed-backend ``` 
+` docker build -t hed-backend .
+docker run -p 8000:8000 hed-backend `
 
 
